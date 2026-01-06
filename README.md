@@ -28,7 +28,19 @@ streamlit run app.py
 ```
 ## Screenshots
 
+- Head Section
+<img width="811" height="164" alt="image" src="https://github.com/user-attachments/assets/0f1abbf8-2b45-4762-a199-61e05b31738b" />
 
+- Upload Section
+<img width="882" height="570" alt="image" src="https://github.com/user-attachments/assets/d7b941f3-9ad4-49c5-a796-caacf037c444" />
+
+- Analysing section
+<img width="760" height="559" alt="image" src="https://github.com/user-attachments/assets/0b522a19-1d20-441b-abba-26557b7cac4e" />
+
+- Results Section 
+<img width="807" height="569" alt="image" src="https://github.com/user-attachments/assets/0f4f9bb6-6d9b-4610-bf30-08a629c8f607" />
+
+<img width="784" height="488" alt="image" src="https://github.com/user-attachments/assets/fa2ca538-a219-429a-84d5-5376daac2224" />
 
 ## Use Cases
 
