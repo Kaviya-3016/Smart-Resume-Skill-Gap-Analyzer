@@ -1,13 +1,11 @@
 import streamlit as st
 from PyPDF2 import PdfReader
-import spacy
+import re
 from fpdf import FPDF
 from io import BytesIO
 
 
-# ---------------- LOAD NLP ----------------
-import spacy
-nlp = spacy.load("en_core_web_sm")
+
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
     page_title="Smart Resume Skill Gap Analyzer",
@@ -160,9 +158,8 @@ def extract_text_from_pdf(pdf_file):
     return text.lower()
 
 def extract_skills_advanced(text):
-    doc = nlp(text)
-    tokens = [token.text.lower() for token in doc]
-    return set(tokens)
+    words = re.findall(r'\b\w+\b', text.lower())
+    return set(words)
 
 def compare_skills(resume_skills, required_skills):
     matched = resume_skills.intersection(required_skills)
